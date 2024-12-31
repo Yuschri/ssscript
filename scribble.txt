@@ -150,8 +150,8 @@ won't be used. Supported: dash, bash,
 bardiche, hammer, blade, skeleton_arm, mask,
 quarterstaff, fire_talisman, cinderwisp. */
 var useable_abilities = ["dash", "bash",
-"blade", "hammer",
-"bardiche", "quarterstaff",
+"skeleton_arm", "mask", "blade", "hammer",
+"fire_talisman", "bardiche", "quarterstaff",
 // "cinderwisp" // will spend your fire runes
 ]
 
