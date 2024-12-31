@@ -15,15 +15,15 @@ want the script to use them. */
 var elemental_items = [
   ["hammer",
     ["aether", "D",],
-    ["poison", "D+8", "D+7"],
+    ["poison", "D"],
     ["ice", "D"],
     ["default",
-     "stone hammer +7", "aether hammer D"],
+     "poison hammer", "aether hammer D"],
   ],
   ["wand",
-    ["vigor", "D+8", "D+7"],
+    ["vigor", "D"],
     ["default",
-    "vigor wand D+8", "vigor wand D+7"],
+    "vigor wand D"],
   ],
   ["staff",
     ["aether", "dU"]
@@ -34,20 +34,20 @@ var elemental_items = [
     ["ice", "dI"],
   ],
   ["sword",
-    ["aether", "dU+9","dU+8"],
-    ["fire", "D+7", "dF"],
+    ["aether", "dU"],
+    //["fire", "D+7", "dF"],
     ["ice", "dI"],
-    ["poison", "dP", "D"],
-    ["vigor", "D", "dL+10", "dL+9"],
+    ["poison", "dP"],
+    ["vigor", "dL"],
     ["default",
-     "aether sword dU+9", "aether sword dU+8",
-     "vigor sword dL", "poison sword D"],
+     "aether sword dU"
+     "vigor sword dL", "poison sword dP"],
   ],
   ["shield",
     ["vigor", "A"],
     ["poison", "A"],
     ["ice", "A"],
-    ["aether", "A"],
+    //["aether", "A"],
     ["fire", "A"],
     ["default", "compound"],
   ],
@@ -55,7 +55,7 @@ var elemental_items = [
 /* These non-elemental items can be used as
 weapon types in the lists below. */
 var special_weapons = ["bardiche", "blade",
-"heavy hammer", "repeater", "arm"]
+"heavy hammer", "repeater"/*, "arm"*/]
 
 /* Weapon type priority for single targets:
 1. First type + foe's weak element.
@@ -71,7 +71,7 @@ var for_melee_single_target = [
 /* If true, then script can use dX weapons for
 dps purposes if you don't have a D weapon of
 that element. */
-var use_mods_for_dmg = false
+var use_mods_for_dmg = true
 
 /* How many regular enemies are needed to start
 using AoE weapons instead of single target. */
@@ -79,7 +79,7 @@ var aoe_threshold = 4
 
 /* Weapons to use for melee AoE, same priority
 logic as the regular melee. */
-var for_melee_aoe = ["arm"]
+var for_melee_aoe = ["blade"]
 
 /* If this is set to `true`, script will prefer
 to use ranged items from lists below instead of
@@ -117,7 +117,7 @@ var for_phys_immune = ["wand", "staff"]
 /* Full name of the shield with the highest
 evade%, will be used to block big boss attacks
 */
-var evade_shield = "vigor shield ah"
+var evade_shield = "vigor shield A"
 
 /* Script will try to stunlock these enemies
 instead of using any other tactics. Supported:
@@ -128,7 +128,7 @@ var do_stunlock = [
 
 // Full names of weapons to use for stunlocking
 var stunlock_weapons = [
-  "aether hammer D", "stone hammer +7"]
+  "aether hammer D", "poison hammer"]
 
 /* How much HP a non-boss enemy must have
 to use dU weapons on it instead of other
@@ -150,8 +150,8 @@ won't be used. Supported: dash, bash,
 bardiche, hammer, blade, skeleton_arm, mask,
 quarterstaff, fire_talisman, cinderwisp. */
 var useable_abilities = ["dash", "bash",
-"skeleton_arm", "mask", "blade", "hammer",
-"fire_talisman", "bardiche", "quarterstaff",
+/*"skeleton_arm", "mask",*/ "blade", "hammer",
+/*"fire_talisman",*/ "bardiche", "quarterstaff",
 // "cinderwisp" // will spend your fire runes
 ]
 
