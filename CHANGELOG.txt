@@ -1,0 +1,72 @@
+Version 1.3.2b
+  - Fixed `debug` version of the script to work with SSRPG v3.49.6 and later
+
+Version 1.3.2
+  - New setting: `speedrun` - exit the location if totaltime > averageTime (thx @guv_bubbs)
+  - New setting: `harvesting` - equip and use shovel and hatchet where possible (thx @guv_bubbs)
+  - Reduce dash/bash activation distance to 15 from 16 to match the game version 3.45.x
+  - Don't use Smite on bosses, so it's ready for the next loop - that would have helped during the Guardian event, sorry! D:
+  - For `fast_potion_bosses` in Naga and Guardian fights, don't take boss distance into account, drink potions right away as was intened (thx @fuzznimp)
+  - Fix typo "treshold" -> "threshold" (thx @fuzznimp)
+  - Fix default bardiche and hammer frames  (thx @max_min_median)
+  - Small performance improvements (thx @max_min_median)
+
+Version 1.3.1
+  - New setting: `enable_repeating_aac` - attack speed increase, only works for 10* repeating crossbow, default is false.
+  - New setting: `use_mods_for_dmg` - if true, then script can use dX weapons for dps purposes if you don't have a D weapon of that element. Default is false.
+  - New setting: `fast_potion_bosses` - a list of bosses where the script will use crit/speed potion right at the start of phase1.
+  - Fix the hammer sometimes whiffing during AoE
+  - Use AoE unmaking weapons if needed
+  - Start the zone with full armor
+  - Use only main hand for stunlocking, debuff/dps with the other
+  - Don't use wands or staffs against beetles
+  - Don't use vigor weapons against Poison Cultist
+  - Use a zerk potion for Dysan phase1
+  - Use better weapons for Dysan phase3
+  - Improve root evasion on the yellow Xylo
+  - Better stunlock for Ceiling Decorator
+  - Use a zerk potion earlier on Hrimnir, break armor with heavy hammer
+  - Significantly improve the yellow Nagaraja
+  - Fix dodging Nagaraja poison while using wands (by disabling wands at specific moments)
+  - Add frame timing info in debug mode
+  - Simplify some code
+
+Version 1.3
+  - Another major rework, basically a rewrite
+  - Automatic AAC for 2-handed weapons
+  - Stunlocking
+  - Fixed all boss fights, including yellow levels
+  - A lot, lot more
+
+Version 1.2.1
+  - Fixed weapon switcher not respecting
+    default weapons in many cases
+  - Added limited support for one more Mask quest
+  - Moved a lot of unnecessary comments from the 
+    script to the readme
+
+Version 1.2
+ - Majorer reorganization and clean up!
+ - Weapons are much easier to configure 
+  (see the comments at the top of the script for details)
+ - Added support for all weapon types
+ - Added support for multiple weapons per element
+ - Added support for non-elemental weapons
+ - Fixed most (all) cases where abilities 
+   interrupted each other.
+ - Added many more settings, including support
+   for some specific item quests.
+ - Improved many boss fights and regular locations
+ - BROKEN: Dysangelos fight is currently quite broken,
+   I'll fix it sometime soon.
+
+Version 1.1
+- Major reorganization and clean up
+- Added more code comments
+- Added table of contents for easier navigation
+- Hide custom UI during cutscenes
+- Fixed incorrect pickpocketing on many bosses
+- Better handling of Poena
+
+Version 1.0
+- Initial release
