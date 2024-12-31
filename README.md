@@ -1,3 +1,5 @@
+Copied from https://github.com/livercat/scribble/
+
 # scribble
 
 Automation script for the Stone Story RPG.
