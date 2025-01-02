@@ -222,8 +222,8 @@ Arm ability */
 var pickpocket_quest = true
 
 // These depend on level/enchants of the Arm
-var arm_damage = 44
-var max_pickpocket_stacks = 3
+var arm_damage = 20
+var max_pickpocket_stacks = 1
 
 /* Cultist Mask quests.
 "simple" - steps 1 and 3 (uses on CD)
