@@ -55,7 +55,7 @@ var elemental_items = [
 /* These non-elemental items can be used as
 weapon types in the lists below. */
 var special_weapons = ["bardiche", "blade",
-"heavy hammer", "repeater"]
+"heavy hammer", "repeater", "arm"]
 
 /* Weapon type priority for single targets:
 1. First type + foe's weak element.
@@ -79,7 +79,7 @@ var aoe_threshold = 4
 
 /* Weapons to use for melee AoE, same priority
 logic as the regular melee. */
-var for_melee_aoe = ["blade"]
+var for_melee_aoe = ["arm"]
 
 /* If this is set to `true`, script will prefer
 to use ranged items from lists below instead of
