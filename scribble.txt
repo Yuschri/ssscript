@@ -219,7 +219,7 @@ var bfg_defeated_foes = []
 /* Set to true if you're doing Skeleton Arm
 quests. Prioritizes last-hitting foes with the
 Arm ability */
-var pickpocket_quest = false
+var pickpocket_quest = true
 
 // These depend on level/enchants of the Arm
 var arm_damage = 44
