@@ -14,40 +14,45 @@ whole elements and weapon types if you don't
 want the script to use them. */
 var elemental_items = [
   ["hammer",
-    ["aether", "D",],
-    ["poison", "D"],
-    ["ice", "D"],
+    ["aether", "D+21",],
+    ["poison", "D+21"],
+    ["ice", "D+21"],
+    ["fire", "D+21"],
     ["default",
-     "poison hammer", "aether hammer D"],
+     "poison hammer D", "aether hammer D"],
   ],
   ["wand",
-    ["vigor", "D"],
+    ["vigor", "dL+21"],
+    ["poison", "dP+21"],
+    ["aether", "dU+21"],
+    ["fire", "dF+21"],
+    ["ice", "dI+21"],
     ["default",
-    "vigor wand D"],
+    "vigor wand dL+21"],
   ],
   ["staff",
-    ["aether", "dU"]
+    ["aether", "dU+21"]
   ],
   ["crossbow",
-    ["poison", "dP"],
-    ["fire", "dF"],
-    ["ice", "dI"],
+    ["poison", "dP+21"],
+    ["fire", "dF+21"],
+    ["ice", "dI+21"],
   ],
   ["sword",
-    ["aether", "dU"],
-//    ["fire", "D+7", "dF"],
-    ["ice", "dI"],
-    ["poison", "dP"],
-    ["vigor", "dL"],
+    ["aether", "dU+21"],
+    ["fire", "dF+21"],
+    ["ice", "dI+21"],
+    ["poison", "dP+21"],
+    ["vigor", "dL+21"],
     ["default",
-     "aether sword dU",
-     "vigor sword dL", "poison sword dP"],
+     "aether sword dU+21",
+     "vigor sword dL+21", "poison sword dP"],
   ],
   ["shield",
     ["vigor", "A"],
     ["poison", "A"],
     ["ice", "A"],
-//    ["aether", "A"],
+    ["aether", "A"],
     ["fire", "A"],
     ["default", "compound"],
   ],
@@ -104,7 +109,7 @@ var for_ranged_single_target = ["crossbow",
 /* Enable this _only_ if you have 10* repeating
 crossbow without attack speed enchant.
 Increases effective attack speed. */
-var enable_repeating_aac = false
+var enable_repeating_aac = true
 
 /* Weapons to use for ranged AoE. Ranged AoE is
 triggered by the same threshold as melee AoE.*/
@@ -205,7 +210,7 @@ to use Smite ability. */
 var smite_threshold = 7
 
 // Depends on level/enchants of your BFG.
-var smite_damage = 85
+var smite_damage = 250
 
 // Enable smiting two screens at once
 var long_long_smite = true
@@ -222,8 +227,8 @@ Arm ability */
 var pickpocket_quest = true
 
 // These depend on level/enchants of the Arm
-var arm_damage = 20
-var max_pickpocket_stacks = 1
+var arm_damage = 80
+var max_pickpocket_stacks = 6
 
 /* Cultist Mask quests.
 "simple" - steps 1 and 3 (uses on CD)
